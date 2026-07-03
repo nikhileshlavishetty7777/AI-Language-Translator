@@ -1,0 +1,332 @@
+/* ==========================================================================
+   AI Language Translator — Premium Glassmorphism Theme
+   Structural styles use CSS custom properties so the entire palette can be
+   swapped at runtime between Dark and Light mode without touching layout.
+   ========================================================================== */
+
+:root {
+    --bg-gradient-1: #0f0c29;
+    --bg-gradient-2: #302b63;
+    --bg-gradient-3: #24243e;
+    --glass-bg: rgba(255, 255, 255, 0.06);
+    --glass-bg-strong: rgba(255, 255, 255, 0.10);
+    --glass-border: rgba(255, 255, 255, 0.18);
+    --text-primary: #f5f6fa;
+    --text-secondary: #b8bcd4;
+    --accent-1: #7f5af0;
+    --accent-2: #2cb67d;
+    --accent-gradient: linear-gradient(135deg, #7f5af0 0%, #2cb67d 100%);
+    --shadow-color: rgba(0, 0, 0, 0.45);
+    --success: #2cb67d;
+    --error: #ef4565;
+    --warning: #f2b134;
+    --card-radius: 20px;
+}
+
+/* ---- Global App Background --------------------------------------------- */
+.stApp {
+    background: linear-gradient(135deg, var(--bg-gradient-1), var(--bg-gradient-2), var(--bg-gradient-3));
+    background-size: 220% 220%;
+    animation: gradientShift 18s ease infinite;
+    color: var(--text-primary);
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ---- Typography ---------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, p, span, label, div {
+    font-family: 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ---- Hero / App Header ---------------------------------------------------*/
+.app-hero {
+    text-align: center;
+    padding: 1.75rem 1.5rem 1.25rem 1.5rem;
+    margin-bottom: 1.25rem;
+    border-radius: var(--card-radius);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 8px 32px var(--shadow-color);
+    animation: fadeInDown 0.6s ease;
+}
+
+.app-hero__title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin: 0;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
+}
+
+.app-hero__subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    font-weight: 400;
+}
+
+.app-hero__badges {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    padding: 0.28rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-border);
+    color: var(--text-secondary);
+}
+
+/* ---- Glass Card ----------------------------------------------------------*/
+.glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--card-radius);
+    padding: 1.4rem 1.5rem;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px var(--shadow-color);
+    margin-bottom: 1.1rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: fadeInUp 0.5s ease;
+}
+
+.glass-card:hover {
+    box-shadow: 0 12px 40px var(--shadow-color);
+}
+
+.glass-card__title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* ---- Metric Pills (char/word counters) ------------------------------------*/
+.metric-row {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.metric-pill {
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.metric-pill strong {
+    color: var(--text-primary);
+}
+
+/* ---- Detected Language Chip ------------------------------------------------*/
+.detected-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--accent-gradient);
+    color: #ffffff;
+    padding: 0.3rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    animation: fadeIn 0.4s ease;
+}
+
+/* ---- Buttons (Streamlit overrides) ----------------------------------------*/
+.stButton > button {
+    border-radius: 12px !important;
+    border: 1px solid var(--glass-border) !important;
+    background: var(--glass-bg-strong) !important;
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+    padding: 0.55rem 1rem !important;
+    transition: all 0.2s ease !important;
+    box-shadow: 0 4px 14px var(--shadow-color) !important;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-1) !important;
+    box-shadow: 0 8px 22px var(--shadow-color) !important;
+}
+
+.stButton > button:active {
+    transform: translateY(0px) scale(0.98);
+}
+
+div[data-testid="stFormSubmitButton"] > button,
+button[kind="primary"] {
+    background: var(--accent-gradient) !important;
+    border: none !important;
+    color: #ffffff !important;
+}
+
+/* ---- Text Areas / Inputs --------------------------------------------------*/
+.stTextArea textarea, .stTextInput input {
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border) !important;
+    border-radius: 14px !important;
+    color: var(--text-primary) !important;
+    font-size: 1rem !important;
+}
+
+.stTextArea textarea:focus, .stTextInput input:focus {
+    border-color: var(--accent-1) !important;
+    box-shadow: 0 0 0 2px rgba(127, 90, 240, 0.35) !important;
+}
+
+/* ---- Selectbox --------------------------------------------------------- */
+div[data-baseweb="select"] > div {
+    background: var(--glass-bg) !important;
+    border-radius: 14px !important;
+    border: 1px solid var(--glass-border) !important;
+    color: var(--text-primary) !important;
+}
+
+/* ---- Native bordered containers (st.container(border=True)) --------------
+   Used as the real glass-card wrapper around groups of interactive widgets,
+   since Streamlit widgets can't be nested inside a raw markdown <div>. */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border) !important;
+    border-radius: var(--card-radius) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px var(--shadow-color);
+    animation: fadeInUp 0.5s ease;
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"] div[data-testid="stVerticalBlock"] {
+    gap: 0.6rem;
+}
+
+/* ---- Sidebar ---------------------------------------------------------- */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, rgba(15, 12, 41, 0.85), rgba(48, 43, 99, 0.85));
+    border-right: 1px solid var(--glass-border);
+}
+
+section[data-testid="stSidebar"] * {
+    color: var(--text-primary);
+}
+
+/* ---- Tabs ---------------------------------------------------------------*/
+.stTabs [data-baseweb="tab-list"] {
+    gap: 0.4rem;
+    background: transparent;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px 12px 0 0;
+    color: var(--text-secondary);
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+}
+
+.stTabs [aria-selected="true"] {
+    background: var(--accent-gradient) !important;
+    color: #ffffff !important;
+}
+
+/* ---- Alerts / Status ------------------------------------------------------*/
+.status-banner {
+    border-radius: 12px;
+    padding: 0.7rem 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    animation: fadeIn 0.35s ease;
+}
+
+.status-banner--error {
+    background: rgba(239, 69, 101, 0.15);
+    border: 1px solid var(--error);
+    color: #ffb3c0;
+}
+
+.status-banner--success {
+    background: rgba(44, 182, 125, 0.15);
+    border: 1px solid var(--success);
+    color: #a8f0cf;
+}
+
+/* ---- History Row -----------------------------------------------------------*/
+.history-empty {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    color: var(--text-secondary);
+}
+
+/* ---- Footer ----------------------------------------------------------------*/
+.app-footer {
+    text-align: center;
+    padding: 1.4rem 0 0.6rem 0;
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+}
+
+.app-footer a {
+    color: var(--accent-1);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ---- Scrollbar ---------------------------------------------------------- */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+    background: var(--glass-border);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--accent-1); }
+
+/* ---- Animations ---------------------------------------------------------- */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-16px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Responsive / Mobile -------------------------------------------------- */
+@media (max-width: 768px) {
+    .app-hero__title { font-size: 1.7rem; }
+    .app-hero__subtitle { font-size: 0.85rem; }
+    .glass-card { padding: 1rem; }
+    .metric-row { gap: 0.4rem; }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "timestamp": "2026-07-03 13:47:40",
+    "source_language": "English",
+    "target_language": "Hindi",
+    "original_text": "hii how are you shreesanth",
+    "translated_text": "नमस्ते श्रीसंत आप कैसे हैं?"
+  },
+  {
+    "timestamp": "2026-07-03 13:46:45",
+    "source_language": "English",
+    "target_language": "Hindi",
+    "original_text": "hii how are you",
+    "translated_text": "नमस्ते आप कैसे हैं"
+  },
+  {
+    "timestamp": "2026-07-03 13:46:38",
+    "source_language": "Hindi",
+    "target_language": "English",
+    "original_text": "hii how are you",
+    "translated_text": "hii how are you"
+  },
+  {
+    "timestamp": "2026-07-03 13:46:19",
+    "source_language": "Hindi",
+    "target_language": "English",
+    "original_text": "हाय",
+    "translated_text": "Hi"
+  },
+  {
+    "timestamp": "2026-07-03 13:45:22",
+    "source_language": "Hindi",
+    "target_language": "English",
+    "original_text": "हाय",
+    "translated_text": "Hi"
+  },
+  {
+    "timestamp": "2026-07-03 13:44:47",
+    "source_language": "English",
+    "target_language": "Hindi",
+    "original_text": "hii",
+    "translated_text": "हाय"
+  }
+]
