@@ -164,28 +164,28 @@ The app will open automatically at `http://localhost:8501`.
 ## 🖼️ Screenshots
 
 ### 🌙 Dark Mode
-![Dark Mode](assets/screenshots/dark-mode-home.png)
+![Dark Mode](screenshots/dark-mode-home.png)
 
 ### ☀️ Light Mode
-![Light Mode](assets/screenshots/light-mode-home.png)
+![Light Mode](screenshots/light-mode-home.png)
 
 ### 🌐 Translation Result
-![Translation Result](assets/screenshots/translation-result.png)
+![Translation Result](screenshots/translation-result.png)
 
 ### 🌐 Translation Result (Example 2)
-![Translation Result 2](assets/screenshots/translation-result1.png)
+![Translation Result 2](screenshots/translation-result1.png)
 
 ### 🌐 Translation Result (Example 3)
-![Translation Result 3](assets/screenshots/translation-result2.png)
+![Translation Result 3](screenshots/translation-result2.png)
 
 ### 🕘 History
-![History](assets/screenshots/history-tab.png)
+![History](screenshots/history-tab.png)
 
 ### 📱 Mobile View
-![Mobile View](assets/screenshots/mobile-view.png)
+![Mobile View](screenshots/mobile-view.png)
 
 ### 📱 Mobile View (Alternative)
-![Mobile View 2](assets/screenshots/mobile-view2.png)
+![Mobile View 2](screenshots/mobile-view2.png)
 
 ---
 
