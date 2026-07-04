@@ -163,15 +163,29 @@ The app will open automatically at `http://localhost:8501`.
 
 ## 🖼️ Screenshots
 
-> _Add your own screenshots here after running the app locally._
+### 🌙 Dark Mode
+![Dark Mode](assets/screenshots/dark-mode-home.png)
 
-```
-assets/screenshots/dark-mode-home.png
-assets/screenshots/light-mode-home.png
-assets/screenshots/translation-result.png
-assets/screenshots/history-tab.png
-assets/screenshots/mobile-view.png
-```
+### ☀️ Light Mode
+![Light Mode](assets/screenshots/light-mode-home.png)
+
+### 🌐 Translation Result
+![Translation Result](assets/screenshots/translation-result.png)
+
+### 🌐 Translation Result (Example 2)
+![Translation Result 2](assets/screenshots/translation-result1.png)
+
+### 🌐 Translation Result (Example 3)
+![Translation Result 3](assets/screenshots/translation-result2.png)
+
+### 🕘 History
+![History](assets/screenshots/history-tab.png)
+
+### 📱 Mobile View
+![Mobile View](assets/screenshots/mobile-view.png)
+
+### 📱 Mobile View (Alternative)
+![Mobile View 2](assets/screenshots/mobile-view2.png)
 
 ---
 
